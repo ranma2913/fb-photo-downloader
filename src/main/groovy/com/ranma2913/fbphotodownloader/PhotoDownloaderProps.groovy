@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component
 @Component
 @ConfigurationProperties(prefix = 'fb-photo-downloader')
 class PhotoDownloaderProps {
+    BrowserName browser
 
     enum BrowserName {
         FIREFOX, CHROME, EDGE
